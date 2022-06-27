@@ -9,47 +9,35 @@ function compareTrue(a, b) {
 
 // Desafio 2
 function calcArea(b, h) {
-  if (b === 10 && h === 50) {
-    return 250;
-  } else if (b === 5 && h === 2) {
-    return 5;
-  } else if (b === 51 && h === 1) {
-    return 25.5;
+  if (b >= 0 && h >= 0) {
+    return (b * h) / 2;
   } else {
     return 'Error';
   }
 }
 
 // Desafio 3
-function splitSentence(entrada) {
-  if (entrada === 'go Trybe') {
-    return ['go', 'Trybe'];
-  } else if (entrada === 'vamo que vamo') {
-    return ['vamo', 'que', 'vamo'];
-  } else if (entrada === 'foguete') {
-    return ['foguete'];
-  } else {
-    return "Error";
+function splitSentence(array) {
+  for (let index = 0; index < array.length; index++) {
+    return array.split(" ", 3);
   }
 
 }
 
 // Desafio 4
-function concatName(enter) {
-  if (enter == ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']) {
-    return 'Paolillo, Lucas';
-  } else if (enter == ['foguete', 'não', 'tem', 'ré']) {
-    return 'ré, foguete';
-  } else if (enter == ['captain', 'my', 'captain']) {
-    return 'captain, captain';
-  } else {
-    return "Error";
+function concatName(array) {
+  for (let index = 0; index < array.length; index += 1) {
+    return array[array.length - 1] + ', ' + array[0];
   }
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
+function footballPoints(v, e) {
+  if (v >= 0 && e >= 0) {
+    return v * 3 + e * 1;
+  } else {
+    return 'error';
+  }
 }
 
 // Desafio 6
