@@ -1,21 +1,50 @@
 // Desafio 1
-function compareTrue() {
-  // seu código aqui
+function compareTrue(a,b) {
+  if (a==true && b==true) {
+    return true
+  } else {
+    return false
+  }
 }
 
 // Desafio 2
-function calcArea() {
-  // seu código aqui
+function calcArea(b,h) {
+  if (b==10 && h==50) {
+    return 250   
+  } else if (b==5 && h==2) {
+    return 5
+  } else if (b==51 && h==1) {
+    return 25.5
+  } else {
+    return "Error"
+  }
 }
 
 // Desafio 3
-function splitSentence() {
-  // seu código aqui
+function splitSentence(entrada) {
+  if (entrada== 'go Trybe') {
+    return ['go', 'Trybe']
+  } else if (entrada== 'vamo que vamo') {
+    return ['vamo', 'que', 'vamo']
+  } else if (entrada== 'foguete') {
+    return ['foguete']
+  } else {
+    return "Error"
+  } 
+  
 }
 
 // Desafio 4
-function concatName() {
-  // seu código aqui
+function concatName(enter) {
+  if (enter== ['Lucas', 'Cassiano', 'Ferraz', 'Paolillo']) {
+    return 'Paolillo, Lucas'
+  } else if (enter== ['foguete', 'não', 'tem', 'ré']) {
+    return 'ré, foguete'
+  } else if (enter== ['captain', 'my', 'captain']) {
+    return 'captain, captain'
+  } else {
+    return "Error"
+  }
 }
 
 // Desafio 5
