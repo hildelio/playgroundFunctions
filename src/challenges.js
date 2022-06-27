@@ -2,8 +2,6 @@
 function compareTrue(a, b) {
   if (a === true && b === true) {
     return true;
-  } else {
-    return false;
   }
 }
 
@@ -18,10 +16,9 @@ function calcArea(b, h) {
 
 // Desafio 3
 function splitSentence(array) {
-  for (let index = 0; index < array.length; index++) {
+  for (let index = 0; index < array.length; index += 1) {
     return array.split(" ", 3);
   }
-
 }
 
 // Desafio 4
