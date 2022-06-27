@@ -9,15 +9,13 @@ function compareTrue(a, b) {
 function calcArea(b, h) {
   if (b >= 0 && h >= 0) {
     return (b * h) / 2;
-  } else {
-    return 'Error';
   }
 }
 
 // Desafio 3
 function splitSentence(array) {
   for (let index = 0; index < array.length; index += 1) {
-    return array.split(" ", 3);
+    return array.split(' ', 3);
   }
 }
 
@@ -32,8 +30,6 @@ function concatName(array) {
 function footballPoints(v, e) {
   if (v >= 0 && e >= 0) {
     return v * 3 + e * 1;
-  } else {
-    return 'error';
   }
 }
 
