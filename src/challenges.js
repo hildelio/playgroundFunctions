@@ -48,18 +48,29 @@ function highestCount(array) {
 
 // Desafio 7 Dúvida
 function catAndMouse(cat1, cat2, mouse) {
-  if (cat2 - mouse < cat1 - mouse) {
+  if (Math.abs(cat2 - mouse) < Math.abs(cat1 - mouse)) {
     return 'cat2';
-  } else if (cat1 - mouse < cat2 - mouse) {
+  } else if (Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)) {
     return 'cat1';
-  } else if (cat1 - mouse === cat2 - mouse) {
+  } else if (Math.abs(cat1 - mouse) === Math.abs(cat2 - mouse)) {
     return 'os gatos tombam e o rato foge';
   }
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numeros, string) {
+  for (const num of numeros) {
+    if (num[index] % 3 == 0) {
+      'fizz';
+    } else if (num[index] % 5 == 0) {
+      'buzz'
+    } else if (num[index] % 3 == 0 && num[index] % 5 == 0) {
+      'fizzBuzz'
+    } else if (num[index] % 3 != 0 && num[index] % 5 != 0) {
+      'bug!'
+    }
+  }
+  return fizzBuzz(numeros, string)
 }
 
 // Desafio 9
