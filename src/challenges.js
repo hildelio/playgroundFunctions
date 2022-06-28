@@ -43,17 +43,17 @@ function highestCount(array) {
       repeat += 1;
     }
   }
-  return repeat
+  return repeat;
 }
 
 // Desafio 7 Dúvida
 function catAndMouse(cat1, cat2, mouse) {
   if (cat2 - mouse < cat1 - mouse) {
-    return "cat2";
+    return 'cat2';
   } else if (cat1 - mouse < cat2 - mouse) {
-    return "cat1";
+    return 'cat1';
   } else if (cat1 - mouse === cat2 - mouse) {
-    return "os gatos tombam e o rato foge";
+    return 'os gatos tombam e o rato foge';
   }
 }
 
