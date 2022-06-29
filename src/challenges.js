@@ -58,20 +58,22 @@ function catAndMouse(cat1, cat2, mouse) {
 }
 
 // Desafio 8
-function fizzBuzz(numeros, string) {
-  for (const num of numeros) {
-    if (num[index] % 3 == 0) {
-      'fizz';
-    } else if (num[index] % 5 == 0) {
-      'buzz';
-    } else if (num[index] % 3 == 0 && num[index] % 5 == 0) {
-      'fizzBuzz';
-    } else if (num[index] % 3 != 0 && num[index] % 5 != 0) {
-      'bug!';
+function fizzBuzz(numeros) {
+  let resultado = [];
+  for (let index = 0; index < numeros.length; index += 1) {
+    if (numeros[index] % 3 === 0 && numeros[index] % 5 !== 0) {
+      resultado.push('fizz');
+    } else if (numeros[index] % 5 === 0 && numeros[index] % 3 !== 0) {
+      resultado.push('buzz');
+    } else if (numeros[index] % 3 === 0 && numeros[index] % 5 === 0) {
+      resultado.push('fizzBuzz');
+    } else {
+      resultado.push('bug!');
     }
   }
-  return fizzBuzz(numeros, string)
+  return resultado  
 }
+console.log(fizzBuzz([2, 15, 7, 9, 45]));    
 
 // Desafio 9
 function encode(palavra) {
