@@ -75,15 +75,47 @@ function fizzBuzz(numeros, string) {
 
 // Desafio 9
 function encode(palavra) {
-  return palavra.replace(/[a]/gi , 1) + palavra.replace(/[e]/gi , 2) + palavra.replace(/[i]/gi , 3) + palavra.replace(/[o]/gi , 4) + palavra.replace(/[u]/gi , 5);
+  while (palavra.match('a')) {
+    palavra.replace(/[a]/gi, 1)
+  }
+  while (palavra.match('e')) {
+    palavra.replace(/[e]/gi, 2)
+  }
+  while (palavra.match('i')) {
+    palavra.replace(/[i]/gi, 3)
+  }
+  while (palavra.match('o')) {
+    palavra.replace(/[o]/gi, 4)
+  }
+  while (palavra.match('u')) {
+    palavra.replace(/[u]/gi, 5);
+  }
+  return palavra
 }
-function decode() {
-  // seu código aqui
+
+function decode(palavra) {
+  while (palavra.match(1)) {
+    palavra.replace(/[1]/gi, 'a')
+  }
+  while (palavra.match(2)) {
+    palavra.replace(/[2]/gi, 'b')
+  }
+  while (palavra.match(3)) {
+    palavra.replace(/[3]/gi, 'c')
+  }
+  while (palavra.match(4)) {
+    palavra.replace(/[4]/gi, 'd')
+  }
+  while (palavra.match(5)) {
+    palavra.replace(/[5]/gi, 'e');
+  }
+  return palavra
 }
+
 
 // Desafio 10
 function techList(a) {
-  const o = {...a};
+  const o = { ...a };
   return o
 }
 
