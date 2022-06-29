@@ -71,14 +71,14 @@ function fizzBuzz(numeros) {
       resultado.push('bug!');
     }
   }
-  return resultado  
+  return resultado;
 }
-  
+
 // Desafio 9
 function encode(palavra) {
   for (let index = 0; index < palavra.lengh; index += 1) {
     if (palavra[index].match('a')) {
-    palavra.replace(/[a]/gi, 1);
+      palavra.replace(/[a]/gi, 1);
     } else if (palavra[index].match('e')) {
       palavra.replace(/[e]/gi, 2);
     } else if (palavra[index].match('i')) {
@@ -86,10 +86,10 @@ function encode(palavra) {
     } else if (palavra[index].match('o')) {
       palavra.replace(/[o]/gi, 4);
     } else if (palavra[index].match('u')) {
-     palavra.replace(/[u]/gi, 5);
+      palavra.replace(/[u]/gi, 5);
     }
   }
-  return palavra
+  return palavra;
 }
 
 function decode(palavra) {
@@ -106,13 +106,13 @@ function decode(palavra) {
       palavra.replace(/[5]/gi, 'e');
     }
   }
-  return palavra
+  return palavra;
 }
-  
+
 // Desafio 10
 function techList(a) {
   const o = { ...a };
-  return o
+  return o;
 }
 
 module.exports = {
