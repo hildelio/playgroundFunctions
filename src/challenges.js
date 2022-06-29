@@ -63,27 +63,28 @@ function fizzBuzz(numeros, string) {
     if (num[index] % 3 == 0) {
       'fizz';
     } else if (num[index] % 5 == 0) {
-      'buzz'
+      'buzz';
     } else if (num[index] % 3 == 0 && num[index] % 5 == 0) {
-      'fizzBuzz'
+      'fizzBuzz';
     } else if (num[index] % 3 != 0 && num[index] % 5 != 0) {
-      'bug!'
+      'bug!';
     }
   }
   return fizzBuzz(numeros, string)
 }
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+function encode(palavra) {
+  return palavra.replace(/[a]/gi , 1) + palavra.replace(/[e]/gi , 2) + palavra.replace(/[i]/gi , 3) + palavra.replace(/[o]/gi , 4) + palavra.replace(/[u]/gi , 5);
 }
 function decode() {
   // seu código aqui
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
+function techList(a) {
+  const o = {...a};
+  return o
 }
 
 module.exports = {
