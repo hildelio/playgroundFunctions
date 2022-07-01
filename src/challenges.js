@@ -76,38 +76,27 @@ function fizzBuzz(numeros) {
 
 // Desafio 9
 function encode(palavra) {
-  for (let index = 0; index < palavra.lengh; index += 1) {
-    if (palavra[index].match('a')) {
-      palavra.replace(/[a]/gi, 1);
-    } else if (palavra[index].match('e')) {
-      palavra.replace(/[e]/gi, 2);
-    } else if (palavra[index].match('i')) {
-      palavra.replace(/[i]/gi, 3);
-    } else if (palavra[index].match('o')) {
-      palavra.replace(/[o]/gi, 4);
-    } else if (palavra[index].match('u')) {
-      palavra.replace(/[u]/gi, 5);
-    }
-  }
-  return palavra;
+  let word1 = palavra.replace(/a/gi, 1);
+  let word2 = word1.replace(/e/gi, 2);
+  let word3 = word2.replace(/i/gi, 3);
+  let word4 = word3.replace(/o/gi, 4);
+  let word5 =word4.replace(/u/gi, 5);
+  return word5;
 }
 
 function decode(palavra) {
-  for (let index = 0; index < palavra.lengh; index += 1) {
-    if (palavra[index].match(1)) {
-      palavra.replace(/[1]/gi, 'a');
-    } else if (palavra[index].match(2)) {
-      palavra.replace(/[2]/gi, 'b');
-    } else if (palavra[index].match(3)) {
-      palavra.replace(/[3]/gi, 'c');
-    } else if (palavra[index].match(4)) {
-      palavra.replace(/[4]/gi, 'd');
-    } else if (palavra[index].match(5)) {
-      palavra.replace(/[5]/gi, 'e');
-    }
-  }
-  return palavra;
+  let word1 = palavra.replace(/1/gi, 'a');
+  let word2 = word1.replace(/2/gi, 'e');
+  let word3 = word2.replace(/3/gi, 'i');
+  let word4 = word3.replace(/4/gi, 'o');
+  let word5 =word4.replace(/5/gi, 'u');
+  return word5;
 }
+
+    
+  
+  
+   
 
 // Desafio 10
 function techList(a) {
