@@ -99,10 +99,19 @@ function decode(palavra) {
    
 
 // Desafio 10
-function techList(a) {
-  const o = { ...a };
-  return o;
+function techList(array, string) {
+ let object = []
+ let newArray = array.sort()
+ for (let index = 0; index < newArray.length; index += 1) {
+   object.push({'name' : string, 'tech' : newArray[index]})   
+  }
+  if (array.length === 0) {
+    return 'Vazio!'
+  } else
+  return object
 }
+  
+//console.log(techList(['a', 'b', 'c'],'Lucas'))
 
 module.exports = {
   calcArea,
