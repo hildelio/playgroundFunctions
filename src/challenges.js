@@ -80,7 +80,7 @@ function encode(palavra) {
   let word2 = word1.replace(/e/gi, 2);
   let word3 = word2.replace(/i/gi, 3);
   let word4 = word3.replace(/o/gi, 4);
-  let word5 =word4.replace(/u/gi, 5);
+  let word5 = word4.replace(/u/gi, 5);
   return word5;
 }
 
@@ -89,28 +89,23 @@ function decode(palavra) {
   let word2 = word1.replace(/2/gi, 'e');
   let word3 = word2.replace(/3/gi, 'i');
   let word4 = word3.replace(/4/gi, 'o');
-  let word5 =word4.replace(/5/gi, 'u');
+  let word5 = word4.replace(/5/gi, 'u');
   return word5;
 }
 
-    
-  
-  
-   
-
 // Desafio 10
 function techList(array, string) {
- let object = []
- let newArray = array.sort()
- for (let index = 0; index < newArray.length; index += 1) {
-   object.push({'name' : string, 'tech' : newArray[index]})   
+  let object = []
+  let newArray = array.sort()
+  for (let index = 0; index < newArray.length; index += 1) {
+    object.push({ 'name': string, 'tech': newArray[index] })
   }
   if (array.length === 0) {
-    return 'Vazio!'
+    return 'Vazio!';
   } else
-  return object
+    return object;
 }
-  
+
 //console.log(techList(['a', 'b', 'c'],'Lucas'))
 
 module.exports = {
